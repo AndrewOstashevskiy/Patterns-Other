@@ -34,6 +34,11 @@ public class SimpleArray<T> implements Simple<T> {
        }
     }
 
+    /**
+     * 
+     * @param index
+     * @return
+     */
     @Override
     public T get(int index) {
         return values[index];
