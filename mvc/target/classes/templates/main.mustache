@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/html">
+<body>
+<div>
+
+    <form method="post">
+
+        <input type="text" name="text" placeholder="Input message">
+        <input type="text" name="tag" placeholder="Input tag">
+        <button type="submit">Add</button>
+
+    </form>>
+
+</div>
+<div>Messages List</div>
+
+<form method="post" action="filter">
+
+    <input type="text" name="filter" placeholder="asfgsg">
+    <button type="submit">Find</button>
+
+</form>>
+
+{{#messages}}
+    <div>
+        <b>{{Id}}</b>
+        <b>{{text}}</b>
+        <b>{{tag}}</b>
+    </div>
+{{/messages}}
+</body>
+</html>
